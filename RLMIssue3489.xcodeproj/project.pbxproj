@@ -13,7 +13,25 @@
 		DCC463211CD137BE00ADC0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC4631F1CD137BE00ADC0D7 /* Main.storyboard */; };
 		DCC463231CD137BE00ADC0D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC463221CD137BE00ADC0D7 /* Assets.xcassets */; };
 		DCC463261CD137BE00ADC0D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC463241CD137BE00ADC0D7 /* LaunchScreen.storyboard */; };
+		DCC4632E1CD137D400ADC0D7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC4632D1CD137D400ADC0D7 /* Realm.framework */; };
+		DCC4632F1CD137D400ADC0D7 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCC4632D1CD137D400ADC0D7 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCC463321CD138A900ADC0D7 /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = DCC463311CD138A900ADC0D7 /* Items.json */; };
+		DCC463351CD139B800ADC0D7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC463341CD139B800ADC0D7 /* Item.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCC463301CD137D400ADC0D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCC4632F1CD137D400ADC0D7 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DCC463131CD137BE00ADC0D7 /* RLMIssue3489.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLMIssue3489.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +44,10 @@
 		DCC463221CD137BE00ADC0D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC463251CD137BE00ADC0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC463271CD137BE00ADC0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC4632D1CD137D400ADC0D7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		DCC463311CD138A900ADC0D7 /* Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		DCC463331CD139B800ADC0D7 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		DCC463341CD139B800ADC0D7 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC4632E1CD137D400ADC0D7 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,7 @@
 		DCC4630A1CD137BE00ADC0D7 = {
 			isa = PBXGroup;
 			children = (
+				DCC4632D1CD137D400ADC0D7 /* Realm.framework */,
 				DCC463151CD137BE00ADC0D7 /* RLMIssue3489 */,
 				DCC463141CD137BE00ADC0D7 /* Products */,
 			);
@@ -62,6 +86,9 @@
 				DCC4631A1CD137BE00ADC0D7 /* AppDelegate.m */,
 				DCC4631C1CD137BE00ADC0D7 /* ViewController.h */,
 				DCC4631D1CD137BE00ADC0D7 /* ViewController.m */,
+				DCC463331CD139B800ADC0D7 /* Item.h */,
+				DCC463341CD139B800ADC0D7 /* Item.m */,
+				DCC463311CD138A900ADC0D7 /* Items.json */,
 				DCC4631F1CD137BE00ADC0D7 /* Main.storyboard */,
 				DCC463221CD137BE00ADC0D7 /* Assets.xcassets */,
 				DCC463241CD137BE00ADC0D7 /* LaunchScreen.storyboard */,
@@ -89,6 +116,7 @@
 				DCC4630F1CD137BE00ADC0D7 /* Sources */,
 				DCC463101CD137BE00ADC0D7 /* Frameworks */,
 				DCC463111CD137BE00ADC0D7 /* Resources */,
+				DCC463301CD137D400ADC0D7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC463321CD138A900ADC0D7 /* Items.json in Resources */,
 				DCC463261CD137BE00ADC0D7 /* LaunchScreen.storyboard in Resources */,
 				DCC463231CD137BE00ADC0D7 /* Assets.xcassets in Resources */,
 				DCC463211CD137BE00ADC0D7 /* Main.storyboard in Resources */,
@@ -149,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC463351CD139B800ADC0D7 /* Item.m in Sources */,
 				DCC4631E1CD137BE00ADC0D7 /* ViewController.m in Sources */,
 				DCC4631B1CD137BE00ADC0D7 /* AppDelegate.m in Sources */,
 				DCC463181CD137BE00ADC0D7 /* main.m in Sources */,
@@ -265,6 +295,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RLMIssue3489/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fichek.RLMIssue3489;
@@ -276,6 +310,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RLMIssue3489/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fichek.RLMIssue3489;

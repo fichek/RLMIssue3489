@@ -1,27 +1,51 @@
-//
-//  ViewController.m
-//  RLMIssue3489
-//
-//  Created by Filip Radelic on 27.04.2016..
-//  Copyright © 2016. Filip Radelic. All rights reserved.
-//
-
 #import "ViewController.h"
+#import "Item.h"
+
+@import Realm;
 
 @interface ViewController ()
+
+@property (strong, nonatomic) RLMResults *items;
+@property (strong, nonatomic) RLMNotificationToken *notificationToken;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.items = [Item allObjects];
+    
+    self.notificationToken = [self.items addNotificationBlock:^(RLMResults * _Nullable results, RLMCollectionChange * _Nullable change, NSError * _Nullable error) {
+        if (change) {
+            NSLog(@"%@ deletions, %@ insertions, %@ modifications, %@ total objects",
+                  @(change.deletions.count),
+                  @(change.insertions.count),
+                  @(change.modifications.count),
+                  @(results.count));
+        }
+        else {
+            NSLog(@"%@ items at first load", @(results.count));
+        }
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)import:(UIButton *)sender
+{
+    NSData *data = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Items"
+                                                                         withExtension:@"json"]];
+    
+    NSArray *jsonItems = [NSJSONSerialization JSONObjectWithData:data
+                                                         options:kNilOptions
+                                                           error:nil];
+    
+    [[RLMRealm defaultRealm] transactionWithBlock:^{
+        [jsonItems enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [Item createOrUpdateInDefaultRealmWithValue:obj];
+        }];
+    }];
 }
 
 @end
