@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC26BDC61D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26BDC51D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.m */; };
+		DC26BDCE1D01B798005E7EB6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26BDC81D01B798005E7EB6 /* Item.m */; };
+		DC26BDCF1D01B798005E7EB6 /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = DC26BDC91D01B798005E7EB6 /* Items.json */; };
+		DC26BDD01D01B798005E7EB6 /* Subitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26BDCB1D01B798005E7EB6 /* Subitem.m */; };
+		DC26BDD11D01B798005E7EB6 /* Subsubitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26BDCD1D01B798005E7EB6 /* Subsubitem.m */; };
 		DCC463181CD137BE00ADC0D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC463171CD137BE00ADC0D7 /* main.m */; };
 		DCC4631B1CD137BE00ADC0D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC4631A1CD137BE00ADC0D7 /* AppDelegate.m */; };
 		DCC4631E1CD137BE00ADC0D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC4631D1CD137BE00ADC0D7 /* ViewController.m */; };
@@ -15,8 +20,6 @@
 		DCC463261CD137BE00ADC0D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC463241CD137BE00ADC0D7 /* LaunchScreen.storyboard */; };
 		DCC4632E1CD137D400ADC0D7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC4632D1CD137D400ADC0D7 /* Realm.framework */; };
 		DCC4632F1CD137D400ADC0D7 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCC4632D1CD137D400ADC0D7 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DCC463321CD138A900ADC0D7 /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = DCC463311CD138A900ADC0D7 /* Items.json */; };
-		DCC463351CD139B800ADC0D7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC463341CD139B800ADC0D7 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC26BDC41D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+ChangeNotificationFix.h"; sourceTree = "<group>"; };
+		DC26BDC51D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+ChangeNotificationFix.m"; sourceTree = "<group>"; };
+		DC26BDC71D01B798005E7EB6 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		DC26BDC81D01B798005E7EB6 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		DC26BDC91D01B798005E7EB6 /* Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		DC26BDCA1D01B798005E7EB6 /* Subitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subitem.h; sourceTree = "<group>"; };
+		DC26BDCB1D01B798005E7EB6 /* Subitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subitem.m; sourceTree = "<group>"; };
+		DC26BDCC1D01B798005E7EB6 /* Subsubitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subsubitem.h; sourceTree = "<group>"; };
+		DC26BDCD1D01B798005E7EB6 /* Subsubitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subsubitem.m; sourceTree = "<group>"; };
 		DCC463131CD137BE00ADC0D7 /* RLMIssue3489.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLMIssue3489.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC463171CD137BE00ADC0D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC463191CD137BE00ADC0D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,9 +57,6 @@
 		DCC463251CD137BE00ADC0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC463271CD137BE00ADC0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC4632D1CD137D400ADC0D7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		DCC463311CD138A900ADC0D7 /* Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
-		DCC463331CD139B800ADC0D7 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		DCC463341CD139B800ADC0D7 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +95,15 @@
 				DCC4631A1CD137BE00ADC0D7 /* AppDelegate.m */,
 				DCC4631C1CD137BE00ADC0D7 /* ViewController.h */,
 				DCC4631D1CD137BE00ADC0D7 /* ViewController.m */,
-				DCC463331CD139B800ADC0D7 /* Item.h */,
-				DCC463341CD139B800ADC0D7 /* Item.m */,
-				DCC463311CD138A900ADC0D7 /* Items.json */,
+				DC26BDC41D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.h */,
+				DC26BDC51D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.m */,
+				DC26BDC71D01B798005E7EB6 /* Item.h */,
+				DC26BDC81D01B798005E7EB6 /* Item.m */,
+				DC26BDCA1D01B798005E7EB6 /* Subitem.h */,
+				DC26BDCB1D01B798005E7EB6 /* Subitem.m */,
+				DC26BDCC1D01B798005E7EB6 /* Subsubitem.h */,
+				DC26BDCD1D01B798005E7EB6 /* Subsubitem.m */,
+				DC26BDC91D01B798005E7EB6 /* Items.json */,
 				DCC4631F1CD137BE00ADC0D7 /* Main.storyboard */,
 				DCC463221CD137BE00ADC0D7 /* Assets.xcassets */,
 				DCC463241CD137BE00ADC0D7 /* LaunchScreen.storyboard */,
@@ -164,7 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC463321CD138A900ADC0D7 /* Items.json in Resources */,
+				DC26BDCF1D01B798005E7EB6 /* Items.json in Resources */,
 				DCC463261CD137BE00ADC0D7 /* LaunchScreen.storyboard in Resources */,
 				DCC463231CD137BE00ADC0D7 /* Assets.xcassets in Resources */,
 				DCC463211CD137BE00ADC0D7 /* Main.storyboard in Resources */,
@@ -178,10 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC463351CD139B800ADC0D7 /* Item.m in Sources */,
+				DC26BDCE1D01B798005E7EB6 /* Item.m in Sources */,
+				DC26BDC61D01B6DB005E7EB6 /* RLMObject+ChangeNotificationFix.m in Sources */,
 				DCC4631E1CD137BE00ADC0D7 /* ViewController.m in Sources */,
 				DCC4631B1CD137BE00ADC0D7 /* AppDelegate.m in Sources */,
+				DC26BDD11D01B798005E7EB6 /* Subsubitem.m in Sources */,
 				DCC463181CD137BE00ADC0D7 /* main.m in Sources */,
+				DC26BDD01D01B798005E7EB6 /* Subitem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +318,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RLMIssue3489/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fichek.RLMIssue3489;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,6 +334,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RLMIssue3489/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fichek.RLMIssue3489;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +360,7 @@
 				DCC4632C1CD137BE00ADC0D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

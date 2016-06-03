@@ -1,4 +1,5 @@
 #import "ViewController.h"
+#import "RLMObject+ChangeNotificationFix.h"
 #import "Item.h"
 
 @import Realm;
@@ -34,6 +35,12 @@
 
 - (IBAction)import:(UIButton *)sender
 {
+    // ("Import with the fix" button has tag = 1)
+    [self importWithFix:sender.tag];
+}
+
+- (void)importWithFix:(BOOL)fix
+{
     NSData *data = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"Items"
                                                                          withExtension:@"json"]];
     
@@ -43,8 +50,21 @@
     
     [[RLMRealm defaultRealm] transactionWithBlock:^{
         [jsonItems enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [Item createOrUpdateInDefaultRealmWithValue:obj];
+            if (fix) {
+                [Item cnf_createOrUpdateInRealm:[RLMRealm defaultRealm]
+                                      withValue:obj];
+            }
+            else {
+                [Item createOrUpdateInDefaultRealmWithValue:obj];
+            }
         }];
+    }];
+}
+
+- (IBAction)clear:(UIButton *)sender
+{
+    [[RLMRealm defaultRealm] transactionWithBlock:^{
+        [[RLMRealm defaultRealm] deleteObjects:self.items];
     }];
 }
 

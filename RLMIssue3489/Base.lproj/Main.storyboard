@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -24,10 +24,28 @@
                                     <action selector="import:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlH-dJ-nXN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ER-25-TUV">
+                                <rect key="frame" x="238" y="323" width="125" height="30"/>
+                                <state key="normal" title="Import with the fix"/>
+                                <connections>
+                                    <action selector="import:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pwa-4e-g6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFv-lO-p7l">
+                                <rect key="frame" x="282" y="361" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tr3-Pk-qyg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2ER-25-TUV" firstAttribute="top" secondItem="l9I-sp-oQE" secondAttribute="bottom" constant="8" id="CEJ-t5-wyb"/>
+                            <constraint firstItem="SFv-lO-p7l" firstAttribute="top" secondItem="2ER-25-TUV" secondAttribute="bottom" constant="8" id="UAH-r7-UdH"/>
+                            <constraint firstItem="SFv-lO-p7l" firstAttribute="centerX" secondItem="2ER-25-TUV" secondAttribute="centerX" id="WIx-V5-Dg2"/>
                             <constraint firstItem="l9I-sp-oQE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WYm-ao-RE4"/>
+                            <constraint firstItem="2ER-25-TUV" firstAttribute="centerX" secondItem="l9I-sp-oQE" secondAttribute="centerX" id="b7b-Li-c3D"/>
                             <constraint firstItem="l9I-sp-oQE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gT1-aV-ciI"/>
                         </constraints>
                     </view>

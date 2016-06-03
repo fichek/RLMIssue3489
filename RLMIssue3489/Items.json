@@ -1,14 +1,47 @@
 [
-    {
-        "uuid": "B0351112-69F0-4B22-9F0C-11250F6FA7E1",
-        "name": "First item"
-    },
-    {
-        "uuid": "2B91D21C-AF89-4788-88D1-26B55AE1CE8F",
-        "name": "Second item"
-    },
-    {
-        "uuid": "913695E2-A84F-456D-96DA-2B782364B9BA",
-        "name": "Third item"
+  {
+    "uuid": "B0351112-69F0-4B22-9F0C-11250F6FA7E1",
+    "name": "First",
+    "subitem": {
+      "uuid": "DCFE2E37-84CD-4400-9E45-A3EE0FD0D351",
+      "subsubitems": [
+        {
+          "uuid": "CFE73221-B0FC-462F-A828-49A4FC55CE1F"
+        },
+        {
+          "uuid": "D86433D1-021D-42CC-A95E-39E88BF0941B"
+        }
+      ]
     }
+  },
+  {
+    "uuid": "2B91D21C-AF89-4788-88D1-26B55AE1CE8F",
+    "name": "Second",
+    "subitem": {
+      "uuid": "0A606D14-72AE-41EE-B8CC-50D5269726E7",
+      "subsubitems": [
+        {
+          "uuid": "19E5F07B-27DB-42E5-B1B8-92505BA276E5"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "913695E2-A84F-456D-96DA-2B782364B9BA",
+    "name": "Third",
+    "subitem": {
+      "uuid": "32B8E873-6EAB-4A46-8A4A-A5A11CA762E1",
+      "subsubitems": [
+        {
+          "uuid": "58CDF8EE-A183-4E90-A0C0-7B9A2ADCC75F"
+        },
+        {
+          "uuid": "FE0410A9-F78D-417B-83FC-68B20DC5E6F3"
+        },
+        {
+          "uuid": "0FEA555F-C31E-4AE5-A212-D4F313DEFC9D"
+        }
+      ]
+    }
+  }
 ]
